@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>album</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>album</h1>
+        <img id="image" src="OIP.jpg">
+        <H4 id="text">cover</H4>
+        <button type="button" onclick="next()">NEXT</button>
+        <script>
+            console.log("cover")
+            var y=["OIP.jpg","tenor.gif","mz.gif","me-2.jpg"];
+            var x=["cover","dad","mom","me"]
+var i=0;
+function next(){
+document.getElementById("image").src=y[i];
+document.getElementById("text").innerHTML=x[i];
+console.log("x[i]")
+  i=i+1
+if(i==4){
+ i=0;
+}
+}
+        </script>
+    </body>
+</html>
